@@ -6,25 +6,25 @@
 ////////////////////////
 
 // Imports
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700);
 @import url(https://fonts.googleapis.com/css?family=Merriweather:400,400italic,300italic,300);
-@include font-face("clear sans", font-files("clearsans-1.00/EOT/ClearSans.eot", "clearsans-1.00/WOFF/ClearSans.woff", "clearsans-1.00/TTF/ClearSans.ttf", "clearsans-1.00/SVG/ClearSans.svg"));
 
 // Font Declarations
-.clear-sans {
-  font-family: 'clear sans', georgia, serif;
+.open-sans {
+  font-family: 'open sans', georgia, serif;
   font-weight: 400;
 }
-.clear-sans--italic {
-  @extend .clear-sans;
+.open-sans--italic {
+  @extend .open-sans;
   font-weight: 400;
   font-style: italic;
 }
-.clear-sans--light {
-  @extend .clear-sans;
+.open-sans--light {
+  @extend .open-sans;
   font-weight: 300;
 }
-.clear-sans--light-italic {
-  @extend .clear-sans;
+.open-sans--light-italic {
+  @extend .open-sans;
   font-weight: 300;
   font-style: italic;
 }
@@ -33,6 +33,7 @@
   font-family: 'georgia';
   font-weight: 100;
 }
+
 .merriweather {
   font-family: 'Merriweather', serif;
   font-weight: 300;

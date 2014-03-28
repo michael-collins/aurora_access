@@ -29,7 +29,7 @@
 }
 
 body {
-  @extend .clear-sans;
+  @extend .open-sans;
   @include adjust-font-size-to($base-font-size);
   background-color: $background-color;
   color: $text-color;
@@ -37,17 +37,17 @@ body {
 }
 
 h1, .h1 {
-  @extend .clear-sans--light;
+  @extend .open-sans--light;
   @include adjust-font-size-to($base-font-size * 3);
   line-height: 130%;
 }
 h2, .h2 {
-  @extend .clear-sans--light;
+  @extend .open-sans--light;
   @include adjust-font-size-to($base-font-size * 2.5);
   line-height: 130%;
 }
 h3, .h3 {
-  @extend .clear-sans--light;
+  @extend .open-sans--light;
   @include adjust-font-size-to($base-font-size * 2.0);
   line-height: 130%;
 }
@@ -74,13 +74,4 @@ a {
     color: lighten($link-color, 10);
   }
 }
-
-input {
-
-}
-
-textarea {
-  @extend .sweet-forms;
-}
-
 
