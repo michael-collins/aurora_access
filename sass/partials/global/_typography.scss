@@ -1,0 +1,47 @@
+////////////////////////
+// Typography
+//
+// All of the typography variables and definitions
+// should go here.
+////////////////////////
+
+// Imports
+@import url(https://fonts.googleapis.com/css?family=Merriweather:400,400italic,300italic,300);
+@include font-face("clear sans", font-files("clearsans-1.00/EOT/ClearSans.eot", "clearsans-1.00/WOFF/ClearSans.woff", "clearsans-1.00/TTF/ClearSans.ttf", "clearsans-1.00/SVG/ClearSans.svg"));
+
+// Font Declarations
+.clear-sans {
+  font-family: 'clear sans', georgia, serif;
+  font-weight: 400;
+}
+.clear-sans--italic {
+  @extend .clear-sans;
+  font-weight: 400;
+  font-style: italic;
+}
+.clear-sans--light {
+  @extend .clear-sans;
+  font-weight: 300;
+}
+.clear-sans--light-italic {
+  @extend .clear-sans;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.georgia {
+  font-family: 'georgia';
+  font-weight: 100;
+}
+.merriweather {
+  font-family: 'Merriweather', serif;
+  font-weight: 300;
+}
+
+///////////////////////
+// Vertical Rhythm
+// all spacing calculations should be based off of these variables.
+//////////////////////
+$base-font-size: 18px;
+$base-line-height: 30px;
+@include establish-baseline();

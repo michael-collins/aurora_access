@@ -1,0 +1,15 @@
+////////////////////////
+// Base Partials
+//
+// These files will be shared across all three of your output
+//  CSS files. Generally included here are only Compass Extension
+//  imports and imports for variables, functions, mixins, and extendables.
+//
+// Toolkit imports all of Compass, so there is no need to import it separately.
+////////////////////////
+
+@import 'variables';
+@import 'functions';
+@import 'typography';
+@import 'mixins/**/*';
+@import 'extends/**/*';

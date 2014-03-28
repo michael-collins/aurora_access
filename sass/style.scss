@@ -1,0 +1,43 @@
+////////////////////////
+// Style File
+//
+// This file gets turned into style.css. This file should really hold nothing except for imports of your base, style guide, layouts, modules, and states partials.
+////////////////////////
+
+////////////////////////
+// Compass Extensions
+////////////////////////
+@import 'toolkit';
+@import 'singularitygs';
+@import 'compass';
+@import 'breakpoint';
+
+////////////////////////
+// Base Import
+////////////////////////
+@import 'partials/global/base';
+
+////////////////////////
+// Import Style Guide
+////////////////////////
+@import 'partials/styleguide/**/*';
+
+////////////////////////
+// Import Layouts
+////////////////////////
+@import 'partials/layouts/**/*';
+
+////////////////////////
+// Import Modules
+////////////////////////
+@import 'partials/modules/**/*';
+
+////////////////////////
+// Import States
+////////////////////////
+@import 'partials/states/**/*';
+
+////////////////////////
+// Import States
+////////////////////////
+@import 'partials/pages/**/*';

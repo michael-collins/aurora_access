@@ -1,0 +1,130 @@
+////////////////////////
+// Mixins Partials
+//
+// All of your mixins should go in this file.
+////////////////////////
+
+@mixin stat-message($bg-color, $text-color) {
+  text-align: center;
+  font-weight: bold;
+  margin: 20px;
+  padding: 10px;
+  color: $text-color;
+  background-color: $bg-color;
+  border: 1px solid lighten($bg-color, 20%);
+  text-shadow: -1px -1px 1px $bg-color;
+}
+
+/**
+ * @param $selector Name of the psuedo selector
+ */
+@mixin entypo($selector) {
+  @if $selector == before {
+    &:before {
+      @extend .entypo;
+      margin-right: .3em;
+      @content;
+    }
+  }
+  @if $selector == after {
+    &:after {
+      @extend .entypo;
+      margin-left: .3em;
+      @content;
+    }
+  }
+  @if $selector == placeholder {
+    &:empty:before {
+      @extend .entypo;
+      @content;
+    }
+  }
+}
+
+
+// Tables
+
+// Use this mixin in conjuction with dATables.js
+@mixin datables($breakpoint:30em,$td-padding:0) {
+  @media only screen and (max-width: $breakpoint) {
+    /* Force table to not be like tables anymore */
+    &, thead, tbody, th, td, tr {
+      display: block;
+    }
+
+    /* Hide table headers */
+    thead tr {
+      position: absolute;
+      top: -9999px;
+      left: -9999px;
+    }
+
+    td {
+      /* Behave  like a "row" */
+      border: none;
+      border-bottom: 1px solid #eee;
+      position: relative;
+      display: block;
+      overflow-x: scroll;
+      padding: $td-padding;
+      padding-left: 50%;
+      white-space: wrap;
+    }
+
+    td:before {
+      content: attr(data-heading);
+      position: absolute;
+      top: $td-padding;
+      left: 6px;
+      width: 45%;
+      padding-right: 10px;
+      white-space: wordwrap;
+    }
+  }
+}
+
+@mixin table-thead {
+  background: $dark-blue;
+  color: $gray-blue;
+  font-weight: normal;
+  text-align: center;
+}
+
+@mixin child-margin-fixer($selector:'*') {
+  & > #{$selector}:first-child,
+  & > #{$selector}:last-child,
+  & > #{$selector}:last-child > #{$selector}:last-child,
+  & > #{$selector}:last-child > #{$selector}:last-child > #{$selector}:last-child {
+    margin: 0;
+  }
+}
+
+@mixin list-no-style {
+  margin: 0;
+  padding: 0;
+
+  li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+
+@mixin main-content-padding($methond: 'padding',$direction: '',$offset:0) {
+  $plusmin: '';
+  @if $direction == negative {
+    $plusmin: '-'
+  }
+
+  #{$methond}-left: #{$plusmin}(($main-content-padding - $offset) * .3);
+  #{$methond}-right: #{$plusmin}(($main-content-padding - $offset) * .3);
+  @include breakpoint(40em) {
+    #{$methond}-left: #{$plusmin}(($main-content-padding - $offset) * .5);
+    #{$methond}-right: #{$plusmin}(($main-content-padding - $offset) * .5);
+  }
+  @include breakpoint(60em) {
+    #{$methond}-left: #{$plusmin}(($main-content-padding - $offset) * 1);
+    #{$methond}-right: #{$plusmin}(($main-content-padding - $offset) * 1);
+  }
+}
