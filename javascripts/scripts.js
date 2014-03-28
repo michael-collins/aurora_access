@@ -1,12 +1,12 @@
-(function($) {
-Drupal.behaviors.viewportUnitsRepaintFix = {
-  attach: function (context, settings) {
-    // Determine what elements will get repainted
-    causeRepaintsOn = $(".site-name__name");
+(function ($) {
+  Drupal.behaviors.viewportUnitsRepaintFix = {
+    attach: function () {
+      // Determine what elements will get repainted
+      var causeRepaintsOn = $(".header__sitename");
 
-    $(window).resize(function() {
-      causeRepaintsOn.css("z-index", 1);
-    });
-  }
-};
+      $(window).resize(function () {
+        causeRepaintsOn.css("z-index", 1);
+      });
+    }
+  };
 })(jQuery);

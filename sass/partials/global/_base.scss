@@ -8,6 +8,18 @@
 // Toolkit imports all of Compass, so there is no need to import it separately.
 ////////////////////////
 
+////////////////////////
+// Compass Extensions
+////////////////////////
+@import 'toolkit';
+@import 'singularitygs';
+@import 'compass';
+@import 'breakpoint';
+
+
+////////////////////////
+// Import Partials
+////////////////////////
 @import 'variables';
 @import 'functions';
 @import 'typography';

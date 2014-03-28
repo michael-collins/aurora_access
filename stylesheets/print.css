@@ -1,0 +1,51 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700);
+@import url(https://fonts.googleapis.com/css?family=Merriweather:400,400italic,300italic,300);
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  *behavior: url('../behaviors/box-sizing/boxsizing.php');
+}
+
+img, video {
+  max-width: 100%;
+  height: auto;
+}
+
+.open-sans, .open-sans--italic, .open-sans--light, .open-sans--light-italic {
+  font-family: 'open sans', georgia, serif;
+  font-weight: 400;
+}
+
+.open-sans--italic {
+  font-weight: 400;
+  font-style: italic;
+}
+
+.open-sans--light {
+  font-weight: 300;
+}
+
+.open-sans--light-italic {
+  font-weight: 300;
+  font-style: italic;
+}
+
+.georgia {
+  font-family: 'georgia';
+  font-weight: 100;
+}
+
+.merriweather {
+  font-family: 'Merriweather', serif;
+  font-weight: 300;
+}
+
+html {
+  font-size: 112.5%;
+  line-height: 1.66667em;
+}
+
+/**
+ * @param $selector Name of the psuedo selector
+ */
