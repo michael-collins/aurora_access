@@ -1,4 +1,0 @@
-# Aurora Access
-
-To come...
-
