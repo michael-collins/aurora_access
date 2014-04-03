@@ -1,7 +1,10 @@
 Run the following commands:
 
-#If you there is no .rvmrc file
+#If there is no .rvmrc file
 rvm --create --rvmrc ruby-2.1.1@theme_name
+
+# Make sure this path has been added to ~/.bash_profile
+### PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 #Install the Grunt plugins. You might have to run these commands as sudo.
 npm install -g bower

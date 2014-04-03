@@ -1,5 +1,5 @@
-name =  Theme Name
-description =  Theme Name theme based on the Aurora base theme.
+name =  Aurora Access
+description =  Aurora Access, developed from the aurora_kickstarter repo, is a highly accessible online education theme for ELMSLN, and an Aurora subtheme.
 core = 7.x
 base theme = aurora
 
