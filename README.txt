@@ -1,7 +1,7 @@
 Run the following commands:
 
 #If there is no .rvmrc file
-rvm --create --rvmrc ruby-2.1.1@theme_name
+rvm --create --rvmrc ruby-2.1.1@aurora_access
 
 # Make sure this path has been added to ~/.bash_profile
 ### PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting

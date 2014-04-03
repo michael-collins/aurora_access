@@ -165,6 +165,5 @@ module.exports = function (grunt) {
     'parallel:assets',
     'compass:dist',
     'jshint',
-    'casperjs',
   ]);
 };
