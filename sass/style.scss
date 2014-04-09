@@ -41,3 +41,61 @@
 // Import States
 ////////////////////////
 @import 'partials/pages/**/*';
+
+// Custom Styles ---
+// Paragraph Text
+.content {
+	article {
+	   margin: 0 auto;
+	   width: 960px;
+	}
+	h1 {
+		text-align: center;
+	    text-transform: uppercase;
+	}
+	div.basic {
+		margin: 0 auto;
+		text-align: left;
+		width: auto;
+		-webkit-column-count: 2;
+		-o-column-count: 2;
+		-moz-column-count: 2;
+		-ms-column-count: 2;
+		column-count: 2;
+		padding: 0px 0px 20px 0px;
+	}
+	p {
+		margin-bottom: 27px;
+		-webkit-column-count: 0;
+		-o-column-count: 0;
+		-moz-column-count: 0;
+		-ms-column-count: 0;
+		column-count: 0;
+		text-align: left;
+
+		.intro {
+			margin-bottom: 27px;
+			border-top: 1px;
+			border-bottom: 1px;
+			padding: 30px;
+			text-align: center;
+			border-style: solid;
+			margin-top: 27px;
+		}
+
+		.pullquote {
+			padding-left: 10px;
+			border-style: solid;
+			border-left-width: 3px;
+			color: rgba(51, 51, 51, 1.00);
+			-webkit-column-count: 1;
+			-o-column-count: 1;
+			-moz-column-count: 1;
+			-ms-column-count: 1;
+			column-count: 1;
+			margin: 0px 10% 27px 5%;
+		}
+	}
+		
+	
+}
