@@ -8,7 +8,8 @@
 // Imports
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700);
 @import url(https://fonts.googleapis.com/css?family=Merriweather:400,400italic,300italic,300);
-@import url(http://fonts.googleapis.com/css?family=Vollkorn:400italic,700italic,400);
+@import url(http://fonts.googleapis.com/css?family=Vollkorn:400italic,700,400);
+@import url(http://fonts.googleapis.com/css?family=Bree+Serif);
 
 // Font Declarations
 .open-sans {
@@ -41,8 +42,8 @@
 }
 // Page Copy
 .content {
-  h1 {
-     font-family: "Merriweather Sans";
+  h2 {
+     font-family: "Bree Serif";
      font-size: 97px;
      line-height: 90px;
      font-weight: 400;
@@ -52,20 +53,26 @@
   p {
     font-size: 19px;
     line-height: 27px;
-    color: rgba(51, 51, 51, 0.80);
+    color: $text-color;
     font-family: "Vollkorn";
     font-weight: 400;
     font-style: normal;
-
-    .intro {
+    
+    span.dropcap {
+       color: #333333;
+       font-size: 95px;
+       line-height: 60px;
+       font-family: Georgia;
+    }
+    &.intro {
       font-family: "Vollkorn";
       font-size: 26px;
       line-height: 39px;
-      font-weight: 700;
+      font-weight: 400;
       font-style: normal;
     }
 
-    .pullquote {
+    &.pullquote {
       font-size: 22px;
       font-family: "Vollkorn";
       font-weight: 400;

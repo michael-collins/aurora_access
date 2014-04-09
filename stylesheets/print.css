@@ -1,6 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700);
 @import url(https://fonts.googleapis.com/css?family=Merriweather:400,400italic,300italic,300);
-@import url(http://fonts.googleapis.com/css?family=Vollkorn:400italic,700italic,400);
+@import url(http://fonts.googleapis.com/css?family=Vollkorn:400italic,700,400);
+@import url(http://fonts.googleapis.com/css?family=Bree+Serif);
 *, *:after, *:before {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -42,8 +43,8 @@ img, video {
   font-weight: 300;
 }
 
-.content h1 {
-  font-family: "Merriweather Sans";
+.content h2 {
+  font-family: "Bree Serif";
   font-size: 97px;
   line-height: 90px;
   font-weight: 400;
@@ -53,19 +54,25 @@ img, video {
 .content p {
   font-size: 19px;
   line-height: 27px;
-  color: rgba(51, 51, 51, 0.8);
+  color: #313131;
   font-family: "Vollkorn";
   font-weight: 400;
   font-style: normal;
 }
-.content p .intro {
+.content p span.dropcap {
+  color: #333333;
+  font-size: 95px;
+  line-height: 60px;
+  font-family: Georgia;
+}
+.content p.intro {
   font-family: "Vollkorn";
   font-size: 26px;
   line-height: 39px;
-  font-weight: 700;
+  font-weight: 400;
   font-style: normal;
 }
-.content p .pullquote {
+.content p.pullquote {
   font-size: 22px;
   font-family: "Vollkorn";
   font-weight: 400;
